@@ -1,5 +1,5 @@
 " PATCH BEGIN
-let g:colors_name="ivory"
+let g:colors_name='ivory'
 set background=light
 highlight Normal guifg=#352F2F guibg=#F2F0ED guisp=NONE blend=NONE gui=NONE
 highlight! link NvimSpacing Normal
@@ -62,7 +62,7 @@ highlight! link LspDiagnosticsSignHint DiagnosticSignHint
 highlight DiagnosticSignInfo guifg=#535367 guibg=NONE guisp=NONE blend=NONE gui=bold
 highlight! link LspDiagnosticsSignInformation DiagnosticSignInfo
 highlight DiagnosticSignOk guifg=#89766A guibg=NONE guisp=NONE blend=NONE gui=bold
-highlight DiagnosticSignWarn guifg=#563E1A guibg=NONE guisp=NONE blend=NONE gui=bold
+highlight DiagnosticSignWarn guifg=#523427 guibg=#E6D3A2 guisp=NONE blend=NONE gui=bold
 highlight! link LspDiagnosticsSignWarning DiagnosticSignWarn
 highlight DiagnosticUnderlineOk guifg=NONE guibg=NONE guisp=#454B39 blend=NONE gui=undercurl
 highlight DiagnosticUnnecessary guifg=NONE guibg=NONE guisp=#5B4D45 blend=NONE gui=underdotted

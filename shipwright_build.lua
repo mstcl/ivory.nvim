@@ -1,9 +1,14 @@
 ---@diagnostic disable: undefined-global
+-- selene: allow(undefined_variable)
+vim.opt.rtp:prepend(vim.fn.getcwd())
 local lushwright = require("shipwright.transform.lush")
+local name = "ivory"
+
+-- selene: allow(undefined_variable)
 run(
-	require("ivory"),
+	require(name),
 	lushwright.to_vimscript,
 	{ prepend, "set background=light" },
-	{ prepend, 'let g:colors_name="ivory"' },
-	{ patchwrite, "colors/ivory.vim", "\" PATCH BEGIN", "\" PATCH END" }
+	{ prepend, "let g:colors_name='" .. name .. "'" },
+	{ patchwrite, "colors/" .. name .. ".vim", '" PATCH BEGIN', '" PATCH END' }
 )

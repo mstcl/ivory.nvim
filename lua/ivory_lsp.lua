@@ -28,10 +28,10 @@ local spec = lush(function(injected_functions)
 		DiagnosticUnderlineError({ base.SpellBad }),
 		DiagnosticUnderlineOk({ sp = palette.green, gui = "undercurl" }),
 
-		DiagnosticSignWarn({ fg = palette.cyan, gui = "bold" }),
-		DiagnosticSignInfo({ fg = palette.blue, gui = "bold" }),
-		DiagnosticSignHint({ fg = palette.magenta, gui = "bold" }),
-		DiagnosticSignError({ fg = palette.accent, gui = "bold" }),
+		DiagnosticSignWarn({ bg = base.Warning.bg, fg = base.Warning.fg, gui = "bold" }),
+		DiagnosticSignInfo({ bg = base.Info.bg, fg = base.Info.fg, gui = "bold" }),
+		DiagnosticSignHint({ bg = base.Hint.bg, fg = base.Hint.fg, gui = "bold" }),
+		DiagnosticSignError({ bg = base.Error.bg, fg = base.Error.fg, gui = "bold" }),
 		DiagnosticSignOk({ fg = palette.fg4, gui = "bold" }),
 
 		DiagnosticVirtualTextWarn({ base.WarningMsg }),
