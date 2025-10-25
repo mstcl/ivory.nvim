@@ -8,16 +8,16 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- AERIAL
-		AerialConstantIcon({ base.Constant }),
-		AerialNamespaceIcon({ base.Directory }),
-		AerialNormal({ fg = palette.fg3 }),
-		AerialLine({ fg = base.Normal.fg, gui = "bold" }),
-		AerialLineNC({ AerialNormal }),
-		AerialStringIcon({ base.String }),
-		AerialVariableIcon({ base.Identifier }),
-		AerialFunctionIcon({ base.Boolean }),
-		AerialBooleanIcon({ base.Boolean }),
-		AerialMethodIcon({ base.Boolean }),
+		AerialConstantIcon { base.Constant },
+		AerialNamespaceIcon { base.Directory },
+		AerialNormal { fg = palette.fg3 },
+		AerialLine { fg = base.Normal.fg, gui = "bold" },
+		AerialLineNC { AerialNormal },
+		AerialStringIcon { base.String },
+		AerialVariableIcon { base.Identifier },
+		AerialFunctionIcon { base.Boolean },
+		AerialBooleanIcon { base.Boolean },
+		AerialMethodIcon { base.Boolean },
 	}
 end)
 return spec

@@ -7,7 +7,7 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- MINI Indentscope
-		MiniIndentscopeSymbol({ base.NonText }),
+		MiniIndentscopeSymbol { base.NonText },
 	}
 end)
 

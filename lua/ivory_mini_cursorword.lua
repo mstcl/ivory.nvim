@@ -7,8 +7,8 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- MINI CURSORWORD
-		MiniCursorwordCurrent({ bg = palette.modbg }),
-		MiniCursorword({ MiniCursorwordCurrent }),
+		MiniCursorwordCurrent { bg = palette.modbg },
+		MiniCursorword { MiniCursorwordCurrent },
 	}
 end)
 

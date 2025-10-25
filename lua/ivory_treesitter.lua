@@ -7,11 +7,11 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- TREESITTER EXTRAS
-		TSPlaygroundFocus({}),
-		TSPlaygroundLang({}),
-		TSQueryLinterError({}),
-		TreesitterContext({ base.CursorLine }),
-		TreesitterContextLineNumber({ base.CursorLine }),
+		TSPlaygroundFocus {},
+		TSPlaygroundLang {},
+		TSQueryLinterError {},
+		TreesitterContext { base.CursorLine },
+		TreesitterContextLineNumber { base.CursorLine },
 	}
 end)
 return spec

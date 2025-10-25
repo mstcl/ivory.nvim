@@ -7,7 +7,7 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- BISCUIT
-		BiscuitColor({ base.NonText }),
+		BiscuitColor { base.NonText },
 	}
 end)
 return spec

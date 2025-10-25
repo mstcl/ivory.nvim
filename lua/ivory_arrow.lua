@@ -7,9 +7,9 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- ARROW
-		ArrowAction({ fg = palette.green}),
-		ArrowCurrentFile({ fg = palette.fg1, gui = "bold" }),
-		ArrowFileIndex({ Constant }),
+		ArrowAction { fg = palette.green},
+		ArrowCurrentFile { fg = palette.fg1, gui = "bold" },
+		ArrowFileIndex { Constant },
 	}
 end)
 

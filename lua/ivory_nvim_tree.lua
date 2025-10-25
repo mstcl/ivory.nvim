@@ -8,9 +8,9 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- NVIM-TREE
-		NvimTreeFolderIcon({ base.Directory }),
-		NvimTreeIndentMarker({ base.Delimiter }),
-		NvimTreeRootFolder({ fg = palette.fg4, gui = "bold" }),
+		NvimTreeFolderIcon { base.Directory },
+		NvimTreeIndentMarker { base.Delimiter },
+		NvimTreeRootFolder { fg = palette.fg4, gui = "bold" },
 	}
 end)
 return spec

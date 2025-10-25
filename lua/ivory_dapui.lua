@@ -8,27 +8,27 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- DAP UI
-		DapUISource({ base.Keyword }),
-		DapUIVariable({ base.Normal }),
-		DapUIValue({ base.Normal }),
-		DapUIFrameName({ base.Normal }),
+		DapUISource { base.Keyword },
+		DapUIVariable { base.Normal },
+		DapUIValue { base.Normal },
+		DapUIFrameName { base.Normal },
 
-		DapUIScope({ fg = palette.blue }),
-		DapUIType({ DapUIScope }),
-		DapUIDecoration({ DapUIScope }),
-		DapUIStoppedThread({ DapUIScope }),
-		DapUILineNumber({ DapUIScope }),
-		DapUIFloatBorder({ DapUIScope }),
+		DapUIScope { fg = palette.blue },
+		DapUIType { DapUIScope },
+		DapUIDecoration { DapUIScope },
+		DapUIStoppedThread { DapUIScope },
+		DapUILineNumber { DapUIScope },
+		DapUIFloatBorder { DapUIScope },
 
-		DapUIBreakpointsCurrentLine({ gui = "bold" }),
-		DapUIBreakpointsInfo({ fg = palette.green }),
-		DapUIWatchesError({ fg = palette.red }),
-		DapUIWatchesValue({ fg = palette.green }),
-		DapUIWatchesEmpty({ fg = palette.magenta }),
-		DapUIThread({ fg = palette.green }),
-		DapUIModifiedValue({ gui = "bold" }),
+		DapUIBreakpointsCurrentLine { gui = "bold" },
+		DapUIBreakpointsInfo { fg = palette.green },
+		DapUIWatchesError { fg = palette.red },
+		DapUIWatchesValue { fg = palette.green },
+		DapUIWatchesEmpty { fg = palette.magenta },
+		DapUIThread { fg = palette.green },
+		DapUIModifiedValue { gui = "bold" },
 
-		DapUIBreakpointsPath({ DapLogPoint }),
+		DapUIBreakpointsPath { DapLogPoint },
 	}
 end)
 return spec

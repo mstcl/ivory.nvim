@@ -6,8 +6,8 @@ local palette = require("palette")
 -- stylua: ignore start
 local spec = lush(function()
 	return {
-		InclineNormalNC({ bg = palette.bg2, fg = palette.fg3, gui = "bold" }),
-		InclineNormal({ bg = palette.cyan, fg = palette.bg1, gui = "bold" }),
+		InclineNormalNC { bg = palette.bg2, fg = palette.fg3, gui = "bold" },
+		InclineNormal { bg = palette.cyan, fg = palette.bg1, gui = "bold" },
 	}
 end)
 return spec

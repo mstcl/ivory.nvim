@@ -8,9 +8,9 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- MINI MAP
-		MiniMapNormal({ fg = palette.bg2 }),
-		MiniMapSymbolView({ MiniMapNormal }),
-		MiniMapSymbolLine({ base.Comment }),
+		MiniMapNormal { fg = palette.bg2 },
+		MiniMapSymbolView { MiniMapNormal },
+		MiniMapSymbolLine { base.Comment },
 	}
 end)
 

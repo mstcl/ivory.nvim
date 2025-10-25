@@ -8,17 +8,17 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- TROUBLE
-		TroubleCount({ fg = palette.yellow, gui = "undercurl" }),
-		TroubleSource({ base.Comment }),
-		TroubleCode({ base.Comment }),
-		TroubleNormal({ bg = palette.bg1, fg = base.Normal.fg }),
-		TroubleSignHint({ lsp.DiagnosticSignHint }),
-		TroubleSignInformation({ lsp.DiagnosticSignInfo }),
-		TroubleSignWarning({ lsp.DiagnosticSignWarn }),
-		TroubleSignError({ lsp.DiagnosticSignError }),
-		TroubleText({ base.Normal }),
-		TroublePreview({ base.Search }),
-		TroubleFile({ base.Directory }),
+		TroubleCount { fg = palette.yellow, gui = "undercurl" },
+		TroubleSource { base.Comment },
+		TroubleCode { base.Comment },
+		TroubleNormal { bg = palette.bg1, fg = base.Normal.fg },
+		TroubleSignHint { lsp.DiagnosticSignHint },
+		TroubleSignInformation { lsp.DiagnosticSignInfo },
+		TroubleSignWarning { lsp.DiagnosticSignWarn },
+		TroubleSignError { lsp.DiagnosticSignError },
+		TroubleText { base.Normal },
+		TroublePreview { base.Search },
+		TroubleFile { base.Directory },
 	}
 end)
 

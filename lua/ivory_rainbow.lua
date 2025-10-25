@@ -7,12 +7,12 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- TS RAINBOW
-		TSRainbowViolet({ fg = palette.magenta }),
-		TSRainbowRed({ fg = palette.red }),
-		TSRainbowBlue({ fg = palette.magenta }),
-		TSRainbowCyan({ fg = palette.cyan }),
-		TSRainbowGreen({ fg = palette.green }),
-		TSRainbowYellow({ fg = palette.yellow }),
+		TSRainbowViolet { fg = palette.magenta },
+		TSRainbowRed { fg = palette.red },
+		TSRainbowBlue { fg = palette.magenta },
+		TSRainbowCyan { fg = palette.cyan },
+		TSRainbowGreen { fg = palette.green },
+		TSRainbowYellow { fg = palette.yellow },
 	}
 end)
 return spec

@@ -7,9 +7,9 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- FLASH
-		FlashLabel({ bg = palette.infobg, fg = palette.blue }),
-		FlashPromptIcon({ bg = palette.delfg, fg = palette.bg2, gui = "bold" }),
-		FlashBackdrop({ fg = palette.fg4 }),
+		FlashLabel { bg = palette.infobg, fg = palette.blue },
+		FlashPromptIcon { bg = palette.delfg, fg = palette.bg2, gui = "bold" },
+		FlashBackdrop { fg = palette.fg4 },
 	}
 end)
 return spec

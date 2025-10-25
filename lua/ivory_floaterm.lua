@@ -7,7 +7,7 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- FLOATERM/TOGGLETERM
-		Floaterm({ bg = palette.bg2, fg = base.Normal.fg }),
+		Floaterm { bg = palette.bg2, fg = base.Normal.fg },
 	}
 end)
 return spec

@@ -8,10 +8,10 @@ local palette = require("palette")
 local spec = lush(function()
 	return {
 		-- GITSIGNS
-		GitSignsAdd({ base.DiffTextAdded }),
-		GitSignsChange({ base.DiffTextChanged }),
-		GitSignsDelete({ base.DiffTextRemoved }),
-		GitSignsCurrentLineBlame({ base.LineNr }),
+		GitSignsAdd { base.DiffTextAdded },
+		GitSignsChange { base.DiffTextChanged },
+		GitSignsDelete { base.DiffTextRemoved },
+		GitSignsCurrentLineBlame { base.LineNr },
 	}
 end)
 return spec

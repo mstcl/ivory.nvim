@@ -7,7 +7,7 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- VISUAL WHITESPACE
-		VisualNonText({ bg = base.Visual.bg, fg = base.TabLine.bg }),
+		VisualNonText { bg = base.Visual.bg, fg = base.TabLine.bg },
 	}
 end)
 

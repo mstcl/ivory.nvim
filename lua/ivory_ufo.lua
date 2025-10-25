@@ -7,14 +7,14 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- UFO
-		UfoFoldedBg({ bg = base.Folded.bg }),
-		UfoPreviewWinBar({ UfoFoldedBg }),
-		UfoFoldedFg({ fg = base.Normal.fg }),
-		UfoFoldedEllipsis({ base.Comment }),
-		UfoCursorFoldedLine({ UfoFoldedBg }),
-		UfoPreviewThumb({ base.PmenuThumb }),
-		UfoPreviewSbar({ base.PmenuSbar }),
-		UfoPreviewCursorLine({ base.Visual }),
+		UfoFoldedBg { bg = base.Folded.bg },
+		UfoPreviewWinBar { UfoFoldedBg },
+		UfoFoldedFg { fg = base.Normal.fg },
+		UfoFoldedEllipsis { base.Comment },
+		UfoCursorFoldedLine { UfoFoldedBg },
+		UfoPreviewThumb { base.PmenuThumb },
+		UfoPreviewSbar { base.PmenuSbar },
+		UfoPreviewCursorLine { base.Visual },
 	}
 end)
 return spec
