@@ -1,6 +1,5 @@
 local lush = require("lush")
 local base = require("ivory_base")
-local palette = require("palette")
 
 ---@diagnostic disable: undefined-global
 -- selene: allow(undefined_variable)
