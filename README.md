@@ -73,7 +73,6 @@ local extended = lush.merge({
 	require("ivory_null_ls"),
 	require("ivory_notify"),
 	require("ivory_rainbow"),
-	require("ivory_statusline"),
 	require("ivory_telescope"),
 	require("ivory_trouble"),
 	require("ivory_ufo"),
