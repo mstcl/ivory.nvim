@@ -5,7 +5,7 @@ local bg = hsluv(68, 11, 95) -- #F2F0ED
 local fg = hsluv(12, 5, 20) -- #352F2F
 local accent = hsluv(14, 73, 28) -- #79241f
 
-local red = hsluv(26, 50, 25) -- #553327
+local red = hsluv(16, 52, 22) -- #562622
 local green = hsluv(102, 34, 31) -- #454B39
 local yellow = hsluv(30, 50, 25) -- #543227
 local blue = hsluv(266, 12, 36) -- #535367
