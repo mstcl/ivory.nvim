@@ -35,6 +35,8 @@ local spec = lush(function()
 		NeogitPopupSwitchKey { NeogitPopupOptionKey },
 		NeogitPopupSwitchEnabled { NeogitPopupOptionEnabled },
 		NeogitPopupSwitchDisabled { NeogitPopupOptionDisabled },
+
+		NeogitFloatBorder { base.FloatBorder },
 	}
 end)
 return spec
