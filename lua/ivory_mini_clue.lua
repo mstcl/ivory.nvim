@@ -7,9 +7,10 @@ local base = require("ivory_base")
 local spec = lush(function()
 	return {
 		-- MINI clue
-		MiniClueTitle { base.Title },
+		MiniClueTitle { base.Label },
 		MiniClueSeparator { base.FloatBorder },
 		MiniClueNextKey { base.Function },
+		MiniClueDescGroup { fg = palette.yellow, gui = "bold" },
 	}
 end)
 
