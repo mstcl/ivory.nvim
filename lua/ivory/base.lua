@@ -143,7 +143,7 @@ local spec = lush(function(injected_functions)
 
 		IncSearch { gui = "reverse" },
 		Cursor { IncSearch },
-		MatchParen { bg = "NONE", fg = "NONE", gui = "underline" },
+		MatchParen { bg = "NONE", fg = "NONE", gui = "underline", sp = palette.fg3 },
 		Search { IncSearch },
 		Substitute { IncSearch },
 		CurSearch { bg = palette.infobg },
