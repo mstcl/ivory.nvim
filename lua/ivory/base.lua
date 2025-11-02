@@ -163,8 +163,7 @@ local spec = lush(function(injected_functions)
 		Magenta { fg = palette.magenta },
 		Cyan { fg = palette.cyan },
 
-		-- TREESITTER SYNTAX
-
+		-- treesitter syntax
 		-- identifiers
 		sym("@variable") { Identifier },
 		sym("@variable.builtin") { Repeat },
@@ -328,7 +327,7 @@ local spec = lush(function(injected_functions)
 		sym("@none.terraform") { Delimiter },
 		sym("@keyword.repeat.terraform") { fg = sym("@keyword.repeat").fg, gui = "italic" },
 
-		-- SEMANTIC TOKENS
+		-- semantic tokens
 		sym("@lsp.type.namespace") { fg = sym("@module").fg, gui = "bold" },
 		sym("@lsp.type.type") { sym("@type") },
 		sym("@lsp.type.class") { sym("@type") },
@@ -408,6 +407,59 @@ local spec = lush(function(injected_functions)
 		sym("@lsp.type.enumMember.terraform") { fg = Normal.fg, gui = "bold" },
 		sym("@lsp.type.type.terraform") { fg = palette.fg2, gui = "bold" },
 		sym("@lsp.typemod.enumMember.defaultLibrary.terraform") { fg = palette.red, gui = "bold" },
+
+		-- diagnostic
+		DiagnosticWarn { Warning },
+		DiagnosticInfo { Info },
+		DiagnosticHint { Hint },
+		DiagnosticError { Error },
+		DiagnosticOk { MsgArea },
+		DiagnosticUnnecessary { sp = palette.fg2, gui = "underdotted" },
+
+		DiagnosticFloatingWarn { WarningMsg },
+		DiagnosticFloatingInfo { InfoMsg },
+		DiagnosticFloatingHint { HintMsg },
+		DiagnosticFloatingError { ErrorMsg },
+		DiagnosticFloatingOk { MoreMsg },
+
+		DiagnosticUnderlineWarn { SpellLocal },
+		DiagnosticUnderlineInfo { SpellRare },
+		DiagnosticUnderlineHint { SpellCap },
+		DiagnosticUnderlineError { SpellBad },
+		DiagnosticUnderlineOk { sp = palette.green, gui = "undercurl" },
+
+		DiagnosticSignWarn { bg = Warning.bg, fg = Warning.fg, gui = "bold" },
+		DiagnosticSignInfo { bg = Info.bg, fg = Info.fg, gui = "bold" },
+		DiagnosticSignHint { bg = Hint.bg, fg = Hint.fg, gui = "bold" },
+		DiagnosticSignError { bg = Error.bg, fg = Error.fg, gui = "bold" },
+		DiagnosticSignOk { fg = palette.fg4, gui = "bold" },
+
+		DiagnosticVirtualTextWarn { WarningMsg },
+		DiagnosticVirtualTextInfo { InfoMsg },
+		DiagnosticVirtualTextHint { HintMsg },
+		DiagnosticVirtualTextError { ErrorMsg },
+		DiagnosticVirtualTextOk { MoreMsg },
+
+		DiagnosticVirtualLinesWarn { WarningMsg },
+		DiagnosticVirtualLinesInfo { InfoMsg },
+		DiagnosticVirtualLinesHint { HintMsg },
+		DiagnosticVirtualLinesError { ErrorMsg },
+		DiagnosticVirtualLinesOk { MoreMsg },
+
+		LspDiagnosticsSignWarning { DiagnosticSignWarn },
+		LspDiagnosticsSignInformation { DiagnosticSignInfo },
+		LspDiagnosticsSignHint { DiagnosticSignHint },
+		LspDiagnosticsSignError { DiagnosticSignError },
+
+		-- lsp extras
+		LspInfoFiletype {},
+		LspInfoTitle {},
+		LspInfoTip {},
+		LspInfoList {},
+		LspInfoBorder {},
+		LspInlayHint { bg = palette.bg2, fg = palette.fg4},
+		LspCodeLens { fg =  palette.fg4},
+		LspSignatureActiveParameter { gui = "bold" },
 	}
 end)
 

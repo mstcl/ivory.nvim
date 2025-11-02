@@ -3,9 +3,8 @@ local lush = require("lush")
 local theme = lush.merge({
 	require("ivory.base"),
 	require("ivory.statusline"),
-	require("ivory.treesitter"),
-	require("ivory.lsp"),
 	require("ivory.mini"),
+	require("ivory.extras"),
 })
 
 return theme

@@ -7,18 +7,18 @@ local base = require("ivory.base")
 -- stylua: ignore start
 local spec = lush(function()
 	return {
-		-- STATUSLINE EXTRAS
+		-- personal statusline
 		StatusLineRed { fg = palette.red },
+		StatusLineGreen { fg = palette.green },
+		StatusLineYellow { fg = palette.yellow },
 		StatusLineBlue { fg = palette.blue },
 		StatusLineMagenta { fg = palette.magenta },
-		StatusLineGreen { fg = palette.green },
-		StatusLinePink { fg = palette.magenta },
-		StatusLineYellow { fg = palette.yellow },
+		StatusLineCyan { fg = palette.cyan },
 		StatusLineAlt { fg = palette.fg4 },
 		StatusLineScrollbar { fg = palette.accent, bg = palette.bg2 },
 		StatusLineModifiedInv { fg = palette.accent, gui = "bold" },
-		StatusLineModified { bg = palette.accent, gui = "bold", fg = palette.bg1 },
-		StatusLineMode { bg = base.Normal.fg, gui = "bold", fg = palette.bg1 },
+		StatusLineModified { fg = palette.bg1, bg = palette.accent, gui = "bold" },
+		StatusLineMode { fg = palette.bg1, bg = base.Normal.fg, gui = "bold" },
 		StatusLineModeInv { fg = base.Normal.fg, gui = "bold" },
 	}
 end)
