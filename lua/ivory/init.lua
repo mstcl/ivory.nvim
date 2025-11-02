@@ -5,6 +5,7 @@ local theme = lush.merge({
 	require("ivory.statusline"),
 	require("ivory.treesitter"),
 	require("ivory.lsp"),
+	require("ivory.mini"),
 })
 
 return theme
