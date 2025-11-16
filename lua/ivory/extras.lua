@@ -401,7 +401,9 @@ local spec = lush(function()
 
 		-- nvim-tree
 		NvimTreeFolderIcon { base.Directory },
-		NvimTreeIndentMarker { base.Delimiter },
+		NvimTreeIndentMarker { fg = palette.bg3 },
+		NvimTreeFolderArrowClosed { base.LineNr },
+		NvimTreeFolderArrowOpen { base.LineNr },
 		NvimTreeRootFolder { fg = palette.fg4, gui = "bold" },
 
 		-- rainbow-delimiters.nvim
