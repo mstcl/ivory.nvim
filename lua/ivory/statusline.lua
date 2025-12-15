@@ -8,6 +8,8 @@ local base = require("ivory.base")
 local spec = lush(function()
 	return {
 		-- personal statusline
+		StatusLineBold { fg = base.StatusLineNC.fg, gui = "bold" },
+		StatusLineAccent { fg = palette.accent },
 		StatusLineRed { fg = palette.red },
 		StatusLineGreen { fg = palette.green },
 		StatusLineYellow { fg = palette.yellow },
