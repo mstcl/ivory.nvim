@@ -400,11 +400,25 @@ local spec = lush(function()
 		NullLsInfoHeader {},
 
 		-- nvim-tree
-		NvimTreeFolderIcon { base.Directory },
-		NvimTreeIndentMarker { fg = palette.bg3 },
+		NvimTreeFolderIcon { fg = palette.fg2 },
+		NvimTreeFolderName { fg = palette.fg2 },
+		NvimTreeOpenedFolderName { fg = palette.fg0 },
+		NvimTreeIndentMarker { fg = palette.bg2 },
 		NvimTreeFolderArrowClosed { base.LineNr },
 		NvimTreeFolderArrowOpen { base.LineNr },
-		NvimTreeRootFolder { fg = palette.fg4, gui = "bold" },
+		NvimTreeRootFolder { fg = palette.fg4 },
+		NvimTreeEmptyFolderName { fg = palette.fg4 },
+		NvimTreeSymlinkFolderName { fg = palette.fg2 },
+		NvimTreeHiddenFileHL { fg = palette.fg4 },
+		NvimTreeModifiedFile { fg = palette.accent },
+
+		-- oil
+		OilDir { fg = palette.fg2 },
+		OilHidden { fg = palette.fg4 },
+
+		-- mini.files
+		MiniFilesDirectory { fg = palette.fg2 },
+		MiniFilesFile { fg = palette.fg0 },
 
 		-- rainbow-delimiters.nvim
 		RainbowDelimiterRed { fg = palette.red },
