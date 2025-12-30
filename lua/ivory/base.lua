@@ -32,8 +32,8 @@ local spec = lush(function(injected_functions)
 		ColorColumn { bg = palette.bg1 },
 		SignColumn {},
 
-		TabLine { bg = palette.bg3, fg = palette.fg3 },
-		TabLineSel { bg = palette.bg1, fg = palette.fg2 },
+		TabLine { bg = palette.bg0, fg = palette.fg5 },
+		TabLineSel { bg = palette.bg0, fg = palette.fg2 },
 		TabLineFill { bg = TabLine.bg },
 
 		WinBar { bg = palette.bg1 },
