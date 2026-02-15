@@ -428,11 +428,11 @@ local spec = lush(function(injected_functions)
 		DiagnosticUnderlineError { SpellBad },
 		DiagnosticUnderlineOk { sp = palette.green, gui = "undercurl" },
 
-		DiagnosticSignWarn { bg = Warning.bg, fg = Warning.fg, gui = "bold" },
-		DiagnosticSignInfo { bg = Info.bg, fg = Info.fg, gui = "bold" },
-		DiagnosticSignHint { bg = Hint.bg, fg = Hint.fg, gui = "bold" },
-		DiagnosticSignError { bg = Error.bg, fg = Error.fg, gui = "bold" },
-		DiagnosticSignOk { fg = palette.fg4, gui = "bold" },
+		DiagnosticSignWarn { WarningMsg },
+		DiagnosticSignInfo { InfoMsg },
+		DiagnosticSignHint { HintMsg },
+		DiagnosticSignError { ErrorMsg },
+		DiagnosticSignOk { MoreMsg },
 
 		DiagnosticVirtualTextWarn { WarningMsg },
 		DiagnosticVirtualTextInfo { InfoMsg },
