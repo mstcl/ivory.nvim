@@ -24,6 +24,9 @@ local spec = lush(function()
 		ArrowCurrentFile { fg = palette.fg1, gui = "bold" },
 		ArrowFileIndex { base.Constant },
 
+		-- codediff.nvim
+		CodeDiffHistoryTitle { fg = palette.fg4, gui = "bold" },
+
 		-- nvim-biscuits
 		BiscuitColor { base.NonText },
 
