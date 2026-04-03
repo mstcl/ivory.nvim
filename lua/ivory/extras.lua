@@ -443,6 +443,15 @@ local spec = lush(function()
 		RenderMarkdownChecked { base.Delimiter },
 		RenderMarkdownTodo { base.Delimiter },
 
+		-- resolve.nvim
+		ResolveSeparatorMarker { bg = palette.bg1 },
+		ResolveOursMarker { fg = base.DiffAdd.bg, bg = palette.green, gui = "bold" },
+		ResolveOursSection { fg = base.DiffAdd.fg, bg = base.DiffAdd.bg },
+		ResolveTheirsMarker { fg = base.DiffChange.bg, bg = palette.magenta, gui = "bold" },
+		ResolveTheirsSection { fg = base.DiffChange.fg, bg = base.DiffChange.bg },
+		ResolveAncestorMarker { fg = base.DiffText.bg, bg = palette.fg2, gui = "bold" },
+		ResolveAncestorSection { fg = base.DiffText.fg, bg = base.DiffText.bg },
+
 		-- fzf-lua
 		FzfLuaLivePrompt { fg = palette.blue },
 		FzfLuaTitleFlags { bg = palette.red, fg = palette.bg1, gui = "bold" },
